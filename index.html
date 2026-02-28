@@ -23,16 +23,17 @@
     <style>
       .container {
         background-color: hsl(0, 0%, 100%);
-        padding: 15px;
         border-radius: 20px;
         box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-        width: 250px;
+        width: 320px;
+        height: 499px;
         align-items: center;
-        align-self: center;
+        justify-content: space-evenly;
       }
       img {
-        object-fit: cover;
-        width: 100%;
+        width: 288px;
+        height: 288px;
+        margin: 16px 16px 24px 16px;
         border-radius: 10px;
       }
       body {
@@ -42,9 +43,21 @@
         justify-content: center;
         height: 100vh;
       }
+      .content {
+        width: 288px;
+        height: 131px;
+        margin: 0 16px 0px 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
       h1 {
         font-size: 20px;
         font-weight: 700;
+        width: 256px;
+        height: 52px;
+        margin: 0 16px 16px 16px;
         color: hsl(218, 44%, 22%);
         font-family: "Outfit", sans-serif;
         text-align: center;
@@ -52,6 +65,9 @@
       p {
         font-size: 15px;
         font-weight: 400;
+        width: 256px;
+        height: 63px;
+        margin: 0;
         color: hsl(216, 15%, 48%);
         font-family: "Outfit", sans-serif;
         text-align: center;
@@ -61,11 +77,13 @@
   <body>
     <section class="container">
       <img src="./images/image-qr-code.png" alt="QR code" />
-      <h1>Improve your front-end skills by building projects</h1>
-      <p>
-        Scan the QR code to visit Frontend Mentor and take your coding skills to
-        the next level
-      </p>
+      <div class="content">
+        <h1>Improve your front-end skills by building projects</h1>
+        <p>
+          Scan the QR code to visit Frontend Mentor and take your coding skills
+          to the next level
+        </p>
+      </div>
     </section>
   </body>
 </html>
